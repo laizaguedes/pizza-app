@@ -12,7 +12,7 @@ model Product {
     id Int @id @default(autoincrement())
     name String
     image String @default("default.jpg")
-    price Decimal @bd.Money()
+    price Decimal @db.Money()
     ingredients String?
 
     orderProducts OrderProducts[]
@@ -40,13 +40,13 @@ model Order {
 }
 
 model OrderProducts {
-    id Int @default(autoincrement())
+    id Int @id @default(autoincrement())
     orderId Int
     productId Int
     quantity Int
 
     order Order @relation(fields: [orderId], references: [id])
-    product User @relation(fields: [productId], references: [id])
+    product Product @relation(fields: [productId], references: [id])
 }
 
 enum OrderStatus {
