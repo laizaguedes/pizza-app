@@ -42,3 +42,19 @@ npm i -D ts-node
 
 npx prisma db seed
 ````
+
+1. criar o arquivo app/api/pizza/route.ts
+2. criar o arquivo services/product.ts
+3. colocar no .env a variavel de ambiente NEXT_PUBLIC_BASE_URL
+4. rodar a aplicação para verificar se a api está funcionando
+
+--------------------------
+1. fazer o layout da aplicação.
+
+````bash
+npx shadcn@latest init
+
+npx shadcn@latest add button e os demais componentes
+````
+-----------------------------
+1. fazer a configuração do arquivo axios.ts para consultar a API
