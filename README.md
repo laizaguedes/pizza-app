@@ -34,3 +34,11 @@ npx prisma migrate dev
 ````
 
 1. Configurar arquivo lib/prisma.ts
+2. criar arquivo seed.ts
+3. configurar o prisma no package.json
+
+````bash
+npm i -D ts-node
+
+npx prisma db seed
+````
