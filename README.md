@@ -81,6 +81,12 @@ Para fazer o login será preciso
     npm i uuid
 ````
 
+4. Para validar os campos dos formulários
+
+````bash
+    npm i zod
+````
+
 
 
 --------------------------
