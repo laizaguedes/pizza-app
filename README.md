@@ -58,3 +58,4 @@ npx shadcn@latest add button e os demais componentes
 ````
 -----------------------------
 1. fazer a configuração do arquivo axios.ts para consultar a API
+2. verificar se está funcionando a consulta nas paginas
