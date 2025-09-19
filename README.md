@@ -59,3 +59,35 @@ npx shadcn@latest add button e os demais componentes
 -----------------------------
 1. fazer a configuração do arquivo axios.ts para consultar a API
 2. verificar se está funcionando a consulta nas paginas
+
+------------------------------
+Para fazer o login será preciso
+1. instalar os cookies do cliente
+
+````bash
+    npm i cookies-next
+````
+
+2. Instalar o bcrypt para encriptografar a senha
+
+````bash
+    npm i bcryptjs
+    npm i -D @types/bcryptjs
+````
+
+3. Criar o token
+
+````bash
+    npm i uuid
+````
+
+
+
+--------------------------
+Informativo
+
+- Para alterar as tabelas do banco ou executar um novo comando no prisma
+
+`````bash
+npx prisma migrate dev
+````
